@@ -57,6 +57,12 @@ class Insights extends Media {
      * @var array $metric a list of all the metrics we are requesting to get back on a certain media type.
      */
     protected $metrics = array(
+        Metric::MEDIA_TYPE_IMAGE => array(
+            Metric::IMPRESSIONS,
+            Metric::REACH,
+            Metric::ENGAGEMENT,
+            Metric::SAVED
+        ),
         Metric::MEDIA_TYPE_CAROUSEL_ALBUM => array(
             Metric::IMPRESSIONS,
             Metric::REACH,
